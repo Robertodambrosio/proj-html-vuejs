@@ -1,6 +1,6 @@
 <template>
-  <Main>
-  </Main>
+  <main>
+  </main>
 </template>
 
 <script>
