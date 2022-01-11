@@ -1,14 +1,14 @@
 <template>
-  <header>
-  </header>
+  <nav>
+  </nav>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+name: 'Navbar'
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

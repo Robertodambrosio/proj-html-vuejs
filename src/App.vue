@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/macro/Header.vue'
+import Main from './components/macro/Main.vue'
+import Footer from './components/macro/Footer.vue'
 
 
 export default {
@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import './assets/style/global.scss';
 </style>
