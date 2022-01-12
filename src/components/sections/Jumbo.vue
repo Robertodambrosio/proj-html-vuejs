@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5">
+  <div class="container my-5">
       <div class="row align-items-center">
           <div class="col-6">
               <span>Development</span>
@@ -35,7 +35,7 @@ name:
         border: 1px solid rgb(214, 214, 214);
     }
     .container-text {
-        width: 60%;
+        width: 70%;
 
         h1 {
             line-height: 60px;
@@ -45,8 +45,6 @@ name:
 
         p {
             color: #adb5bd;
-            font-weight: 600;
-            max-width: 85%;
         }
 
         p:last-child {

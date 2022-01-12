@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mb-5">
     <nav class="row py-2">
       <div class="col-2">
         <img src="../../assets/img/logo-dark.png" alt="landrick logo">
@@ -58,7 +58,6 @@
 
       
     .icon{
-      display: inline-block;
       display: flex;
       justify-content: space-around;
       color: #2f55d4;
@@ -78,6 +77,7 @@
         box-shadow: none;
         background: #2f55d4;
         color: white;
+        cursor: pointer;
       }
       }
     }
