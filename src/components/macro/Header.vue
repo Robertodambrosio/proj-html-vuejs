@@ -1,6 +1,6 @@
 <template>
   <header>
-      <Navbar/>
+      <Navbar :linkNav="linkNav"/>
       <Jumbo/>
   </header>
 </template>
@@ -11,6 +11,9 @@ import Jumbo from '../sections/Jumbo.vue'
 
 export default {
     name: 'Header',
+    props: {
+        linkNav: Array
+    },
     components: {
         Navbar,
         Jumbo

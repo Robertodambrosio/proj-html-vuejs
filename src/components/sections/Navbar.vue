@@ -6,17 +6,9 @@
       </div>
       <div class="col-8">
         <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link mx-1" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #2f55d4">Landing<i class="fas fa-chevron-down mx-1"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Pages<i class="fas fa-chevron-down mx-1"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ">Docs<i class="fas fa-chevron-down mx-1"></i></a>
+          <li class="nav-item" v-for="(link, i) in linkNav" :key="i">
+            <a v-if="!link.arrow" class="nav-link mx-1" aria-current="page" href="#">{{link.name}}</a>
+            <a v-else class="nav-link mx-1" aria-current="page" href="#">{{link.name}}<i class="fas fa-chevron-down mx-1"></i></a>
           </li>
         </ul>
       </div>
@@ -32,7 +24,11 @@
 
 <script>
   export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    props: {
+      linkNav: Array
+    }
+      
   }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :linkNav="linkNav"/>
     <Main/>
     <Footer/>
   </div>
@@ -17,7 +17,29 @@ export default {
   components: {
     Header,
     Main,
-    Footer
+    Footer,
+  },
+  data() {
+    return {
+      linkNav: [
+        {
+          name: 'Home',
+          arrow: false
+        },
+        {
+          name: 'Landing',
+          arrow: true
+        },
+        {
+          name: 'Pages',
+          arrow: true
+        },
+        {
+          name: 'Docs',
+          arrow: true
+        }
+      ]
+    }
   }
 }
 </script>
