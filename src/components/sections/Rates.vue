@@ -113,6 +113,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/variables.scss';
+
+
 .text-container p {
   max-width: 55%;
 }
@@ -127,11 +130,11 @@ export default {
 
 
   .initial-btn {
-  background-color: #2f55d41a;
+  background-color: $bgi;
   padding: 3px 12px;
   border-radius: 20px;
   font-size: 12px;
-  color: #2f55d4;
+  color: $mainblue;
   font-weight: bold;
   border: 1px solid rgb(214, 214, 214);
 }
@@ -142,7 +145,7 @@ export default {
 
   .btn1 {
       width: 100%;
-    background-color: #2f55d4;
+    background-color: $mainblue;
     color: white;
     font-weight: bold;
     padding: 8px 17px;

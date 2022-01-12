@@ -31,6 +31,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/variables.scss';
+
     h2 {
         max-width: 70%;
     }
@@ -40,7 +42,7 @@
     }
 
     .btn1 {
-        background-color: #2f55d4;
+        background-color: $mainblue;
         color: white;
         font-weight: bold;
         padding: 8px 17px;

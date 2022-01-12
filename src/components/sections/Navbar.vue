@@ -37,6 +37,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/variables.scss';
+
  .row {
    display: flex;
    align-items: center;
@@ -52,7 +54,7 @@
       font-weight: 600;
 
       a {
-        color: #8492a6;
+        color: $maintext;
       }
     }
 
@@ -60,7 +62,7 @@
     .icon{
       display: flex;
       justify-content: space-around;
-      color: #2f55d4;
+      color: $mainblue;
 
       .icon-first {
         color: #8492a6;
@@ -68,14 +70,14 @@
       }
 
       .icon-nav{
-        background: #2f55d41a;
+        background: $bgi;
         padding: 5px 10px;
         border-radius: 5px;
         box-shadow: 1px 4px 3px #b9c8fa;
 
       &:hover {
         box-shadow: none;
-        background: #2f55d4;
+        background: $mainblue;
         color: white;
         cursor: pointer;
       }

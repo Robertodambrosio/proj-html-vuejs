@@ -51,6 +51,8 @@ name: 'Features'
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/variables.scss';
+
 .feature-card {
     display: flex;
     align-items: center;
@@ -63,11 +65,11 @@ name: 'Features'
         border-radius: 10px;
 
         .icon {
-            color: #2f55d4;
+            color: $mainblue;
             font-size: 20px;
 
         .icon-nav{
-            background: #2f55d41a;
+            background: $bgi;
             padding: 15px 20px;  
             border-radius: 10px;      
             }
@@ -75,7 +77,7 @@ name: 'Features'
 
         a{
             text-decoration: none;
-            color: #2f55d4;
+            color: $mainblue;
             font-weight: 400;
         }
     }
