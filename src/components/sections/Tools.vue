@@ -17,7 +17,7 @@
                 </div>
                 <button type="button" class="btn btn1 me-2 mt-3">Read more <i class="fas fa-arrow-right mx-1" style="color: #fff;"></i></button>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-6 text-left">
                 <img src="../../assets/img/1.png" alt="about img">
             </div>
         </div>
