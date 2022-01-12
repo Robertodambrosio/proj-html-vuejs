@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="input mb-3">
-            <input type="text" class="form-control py-3" placeholder="Email address" aria-label="Email address"><button class="btn1 btn" type="button">Get started</button>
+            <input type="text" class="form-control py-3 ps-4" placeholder="Email address" aria-label="Email address"><button class="btn1 btn" type="button">Get started</button>
         </div>
     </div>
 </template>
@@ -27,7 +27,7 @@
 
     .input {
         position: relative;
-        width: 60%;
+        width: 55%;
         margin: 0 auto
     }
 

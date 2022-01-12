@@ -127,6 +127,7 @@ export default {};
 
 .card {
   width: 30%;
+  box-shadow: 1px 4px 3px #b9c8fa;
 
   .ul p {
     margin: 0;
