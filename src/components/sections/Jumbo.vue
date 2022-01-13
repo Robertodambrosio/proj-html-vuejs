@@ -67,5 +67,10 @@ name:
             font-weight: bold;
             padding: 8px 17px;
             border-radius: 8px;
+
+            &:hover{
+                color: $mainblue;
+                
+            }
         }
 </style>

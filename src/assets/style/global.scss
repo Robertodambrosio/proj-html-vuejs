@@ -16,8 +16,15 @@ p {
     font-weight: 600;
 }
 
+button,
+.btn,
+.btn-1 {
+    transition: 0.2s;
+}
+
 button:hover,
 .btn:hover,
 .btn-1:hover {
-color: white;
+    color: white;
+    transform: scale(1.035);
 }
