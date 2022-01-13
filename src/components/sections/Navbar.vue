@@ -1,6 +1,6 @@
 <template>
   <div class="container mb-5">
-    <nav class="row py-2">
+    <nav class="row py-2" id="home">
       <div class="col-2">
         <img src="../../assets/img/logo-dark.png" alt="landrick logo">
       </div>
@@ -8,15 +8,16 @@
         <ul class="nav justify-content-center">
           <li class="nav-item" v-for="(link, i) in linkNav" :key="i">
             <a v-if="!link.arrow" class="nav-link mx-1" aria-current="page" href="#">{{link.name}}</a>
-            <a v-else class="nav-link mx-1" aria-current="page" href="#">{{link.name}}<i class="fas fa-chevron-down mx-1"></i></a>
+            <a v-else class="nav-link mx-1" aria-current="page" href="#">{{link.name}}<i
+                class="fas fa-chevron-down mx-1"></i></a>
           </li>
         </ul>
       </div>
       <div class="col-2 icon">
-          <div class="icon-first"><i class="fas fa-search"></i> </div>     
-          <div class="icon-nav"><i class="fab fa-github"></i></div>       
-          <div class="icon-nav"><i class="fab fa-stack-overflow"></i></div>           
-          <div class="icon-nav"><i class="far fa-user"></i></div>
+        <div class="icon-first"><i class="fas fa-search"></i> </div>
+        <div class="icon-nav"><i class="fab fa-github"></i></div>
+        <div class="icon-nav"><i class="fab fa-stack-overflow"></i></div>
+        <div class="icon-nav"><i class="far fa-user"></i></div>
       </div>
     </nav>
   </div>
@@ -28,57 +29,62 @@
     props: {
       linkNav: Array
     }
-      
+
   }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/style/variables.scss';
+  @import '../../assets/style/variables.scss';
 
- .row {
-   display: flex;
-   align-items: center;
+  .row {
+    display: flex;
+    align-items: center;
 
-   img {
-     width: 150px;
-   }
 
-    .nav-item{
+    img {
+      width: 150px;
+    }
+
+    .nav-item {
       text-decoration: none;
       text-transform: uppercase;
       font-size: 13px;
       font-weight: 600;
+
 
       a {
         color: $maintext;
       }
     }
 
-      
-    .icon{
+
+    .icon {
       display: flex;
       justify-content: space-around;
       color: $mainblue;
+
 
       .icon-first {
         color: #8492a6;
         padding: 5px 10px
       }
 
-      .icon-nav{
+      .icon-nav {
         background: $bgi;
         padding: 5px 10px;
         border-radius: 5px;
+        transition: 0.3s;
         box-shadow: 1px 4px 3px #b9c8fa;
-
-      &:hover {
-        box-shadow: none;
-        background: $mainblue;
-        color: white;
         cursor: pointer;
-      }
+
+        &:hover {
+          box-shadow: none;
+          background: $mainblue;
+          color: white;
+        }
       }
     }
 
- }
+  }
+
 </style>

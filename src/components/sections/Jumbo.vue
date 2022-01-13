@@ -45,7 +45,7 @@ name:
     }
 
         p {
-            color: #adb5bd;
+            color: $maintext;
         }
 
         p:last-child {
