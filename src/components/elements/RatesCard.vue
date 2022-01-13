@@ -1,6 +1,6 @@
 <template>
     <div class="card-container d-flex justify-content-between">
-        <div class="card-1 p-4">
+        <div class="card-1 cardh-1 p-4">
             <span class="initial-btn">Basic</span>
             <h2 class="mt-3">$9.00</h2>
             <p>Per month</p>
@@ -26,7 +26,7 @@
             <button type="button" class="btn btn1 me-2 mt-3">Buy now</button>
             <p class="my-3">*No credit card required</p>
         </div>
-                <div class="card-1 p-4">
+                <div class="card-1 cardh-2 p-4">
             <span class="initial-btn">Businesses</span>
             <h2 class="mt-3">$59.00</h2>
             <p>Per month</p>
@@ -52,7 +52,7 @@
             <button type="button" class="btn btn1 me-2 mt-3">Buy now</button>
             <p class="my-3">*No credit card required</p>
         </div>
-                <div class="card-1 p-4">
+                <div class="card-1 cardh-3 p-4">
             <span class="initial-btn">Enterprise</span>
             <h2 class="mt-3">$79.00</h2>
             <p>Per month</p>
@@ -121,6 +121,13 @@
     border-radius: 8px;
     box-shadow: 1px 4px 3px #b9c8fa;
   }
+}
+
+.cardh-1:hover,
+.cardh-2:hover,
+.cardh-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 6px 4px #91a3df;
 }
 
 </style>
