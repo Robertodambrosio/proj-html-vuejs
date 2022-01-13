@@ -2,7 +2,7 @@
   <div id="app">
     <Header :linkNav="linkNav"/>
     <Main/>
-    <Footer/>
+    <Footer :linkFoot="linkFoot"/>
   </div>
 </template>
 
@@ -38,6 +38,32 @@ export default {
           name: 'Docs',
           arrow: true
         }
+      ],
+      linkFoot: [
+        {
+          name: 'About us'
+        },
+                {
+          name: 'Services'
+        },
+                {
+          name: 'Team'
+        },
+                {
+          name: 'Pricing'
+        },
+                {
+          name: 'Project'
+        },
+                {
+          name: 'Careers'
+        },
+                {
+          name: 'Blog'
+        },
+                {
+          name: 'Login'
+        },
       ]
     }
   }

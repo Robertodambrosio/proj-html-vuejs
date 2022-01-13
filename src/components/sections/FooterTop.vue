@@ -21,20 +21,13 @@
             <div class="col-2">
                 <ul>
                     <h4 class="pb-2">Company</h4>
-                    <li><i class="fas fa-chevron-right me-3"></i>About us</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Services</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Team</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Pricing</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Project</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Careers</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Blog</li>
-                    <li><i class="fas fa-chevron-right me-3"></i>Login</li>
+                    <li v-for="(link, i) in linkFoot" :key="i"><i class="fas fa-chevron-right me-3"></i>{{link.name}}</li>
                 </ul>
             </div>
             <div class="col-3">
                 <ul>
                     <h4 class="pb-2">Usefull Links</h4>
-                    <li><i class="fas fa-chevron-right me-3"></i>Terms of Services</li>
+                    <li ><i class="fas fa-chevron-right me-3"></i>Terms of Services</li>
                     <li><i class="fas fa-chevron-right me-3"></i>Privacy Policy</li>
                     <li><i class="fas fa-chevron-right me-3"></i>Documentation</li>
                     <li><i class="fas fa-chevron-right me-3"></i>Changelog</li>
@@ -60,7 +53,10 @@
 
 <script>
     export default {
-        name: 'FooterTop'
+        name: 'FooterTop',
+        props: {
+            linkFoot: Array
+    }
     }
 </script>
 

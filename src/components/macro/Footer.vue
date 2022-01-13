@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <FooterTop/>
+    <FooterTop :linkFoot="linkFoot"/>
     <FooterBottom/>
   </footer>
 </template>
@@ -11,9 +11,12 @@ import FooterTop from '../sections/FooterTop.vue'
 export default {
   components: {
      FooterTop,
-    FooterBottom 
+    FooterBottom,
   },
-    name: 'Footer'
+    name: 'Footer',
+    props: {
+        linkFoot: Array
+    },
 }
 </script>
 
